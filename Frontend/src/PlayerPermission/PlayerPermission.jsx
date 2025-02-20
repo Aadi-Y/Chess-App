@@ -1,6 +1,6 @@
 import React from "react";
 import Permission from "../assets/PermissionImage.jpg";
-import "./playerPermission.css";
+import "./PlayerPermission.css";
 import { Link } from "react-router-dom";
 
 function PlayerPermission() {
