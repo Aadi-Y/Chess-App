@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.event-container-one,.eventInfo-header,.controls{
+.event-container-one,.eventInfo-header,.eventInfo-controls{
     max-width: 1010px;
     margin: auto; 
     padding: 10px;
@@ -25,7 +25,7 @@
     border-radius: 8px;
     
 }
-.controls{
+.eventInfo-controls{
     display: flex;
     justify-content: space-between;
     align-items: center;

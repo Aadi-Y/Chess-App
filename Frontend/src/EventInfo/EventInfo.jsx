@@ -232,7 +232,7 @@ function EventInfo({ onOpen }) {
             ))
           )}
         </div>
-        <div className="controls">
+        <div className="eventInfo-controls">
           <button className="add-btn" onClick={handleOpen}>
             Add
           </button>
