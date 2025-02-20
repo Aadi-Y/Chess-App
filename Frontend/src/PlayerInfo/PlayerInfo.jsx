@@ -179,7 +179,7 @@ function PlayerInfo() {
         </div>
             )
         }
-        <div className="controls">
+        <div className="playerInfo-controls">
             <button className='add-btn' onClick={handleOpen}>Add</button>
         </div>
     </div>

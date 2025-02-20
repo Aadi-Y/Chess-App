@@ -4,7 +4,7 @@
     padding: 1rem;
     border-radius: 5px;
 }
-.playerInfo-container-one,.playerInfo-header{
+.playerInfo-container-one,.playerInfo-header,.playerInfo-controls{
     max-width: 1010px;
     margin: auto; 
     padding: 10px;
