@@ -1,0 +1,75 @@
+.playerInfo-details{
+    border: 1px solid grey;
+    background-color: whitesmoke;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.playerInfo-container-one,.playerInfo-header{
+    max-width: 1010px;
+    margin: auto; 
+    padding: 10px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.playerInfo-container-two{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 10px;
+}
+
+.playerInfo-container h2{
+    text-align: center;
+}
+
+button{
+    margin-right: 5px;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-btn{
+    width: 100px;
+    position: fixed;
+    z-index: 10;
+    bottom: 10px;
+    right: 10px;
+}
+/* Custom Scrollbar for the modal */
+.custom-modal-content::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.custom-modal-content::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+    border-radius: 10px;
+}
+
+.custom-modal-content::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar color */
+    border-radius: 10px;
+}
+
+.custom-modal-content::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color when hovered */
+}
+.playerInfo-header{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    border-bottom: 3px solid rgba(4, 4, 174, 0.755);
+    border-right: none;
+    border-left: none;
+    border-radius: 10px;
+    border-top: none;
+}
+.playerInfo-header button{
+    width: 100px;
+}

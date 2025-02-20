@@ -1,0 +1,14 @@
+.emptyEvent-container{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+
+}
+
+.emptyEvent-container img{
+    height: 300px;
+    width: 400px;
+}

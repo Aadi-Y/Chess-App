@@ -1,0 +1,350 @@
+/* Importing Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.about-main-container {
+    max-width: 1010px;
+    margin: auto; 
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    border: 2px solid #e1e5eb;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Add subtle corner ribbon for uniqueness */
+/* .about-main-container::before {
+    content: "Event Details";
+    position: absolute;
+    top: -10px;
+    right: -50px;
+    background: #0077b6;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 60px;
+    transform: rotate(45deg);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+} */
+
+/* Title Section */
+.title-container {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    background: #f9fcff;
+    border: 2px solid #e1e5eb;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.title-container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #283e4a;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.title-image img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #e1e5eb;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Bordered Content Boxes */
+.box {
+    background: #ffffff;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 2px solid #e1e5eb;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.box h2 {
+    font-size: 24px;
+    color: #283e4a;
+    margin-bottom: 5px;
+}
+
+.box p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Buttons */
+button {
+    display: block;
+    width: 100%;
+    background: linear-gradient(90deg, #0077b6, #005f8a);
+    color: #ffffff;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #2d89ca, #1f6fa5);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .title-container h1 {
+        font-size: 22px;
+    }
+
+    .title-image img {
+        max-height: 200px;
+    }
+
+    .box {
+        padding: 15px;
+    }
+
+    button {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 550px) {
+    .title-container h1 {
+        font-size: 20px;
+        
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .about-main-container {
+        max-width: 1010px;
+        margin: 0px; 
+        padding: 0px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        border: none;
+    }
+    #columns {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    #columns > * {
+        width: 100%; 
+        box-sizing: border-box;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    p{
+        font-size: 17px;
+    }
+    img{
+        min-width: 400px;
+        min-height: 300px;
+    }
+    .title-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main > div {
+    animation: fadeInUp 0.7s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/* Delays for Sequential Animations */
+main .about-event {
+    animation-delay: 0.2s;
+}
+
+main .price-details {
+    animation-delay: 0.4s;
+}
+
+main .location-container {
+    animation-delay: 0.6s;
+}
+
+main .register-container {
+    animation-delay: 0.8s;
+}
+
+main .about-organizer {
+    animation-delay: 1s;
+}
+
+.controls-container{
+    margin-bottom: 10px;
+}
+
+/* Column Layout */
+.column {
+    display: flex;
+    flex-direction: row; /* Align children in a row */
+    justify-content: space-between; /* Space out the children evenly */
+    align-items: center; /* Align items vertically */
+    gap: 20px;
+    margin-bottom: 5px;
+}
+
+.location-container, .date-container, .fee-container1, .register-container {
+    flex: 1; /* Allow each child to take equal width */
+    background: #ffffff;
+    border: 2px solid #e1e5eb;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.location-container:hover, .register-container:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.location-container h2, .register-container h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #283e4a;
+}
+
+.location-container p, .register-container p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.about-organizer {
+    margin-top: 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background-color: #283e4a;
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.hide{
+    display: none;
+}
+.about-btn-container{
+    width: 50%;
+}
+
+.title-image{
+    padding-left: 8rem;
+    padding-right: 8rem;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    border: none;
+}
+.price-details,.registration-deadline,.location-container,.register-container,.cancel-btn-container{
+    display: flex;
+    flex-direction: column;
+}
+.registration-deadline{
+    flex-direction: column;
+}
+.price-details {
+    line-height: 10px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.price-details,.registration-deadline,.contact-details,.event-testimonials,.event-venue{
+    margin-left: 5px;
+}
+.contact-details,.event-testimonials,.event-venue{
+    margin-bottom: 10px;
+}
+.location-container,.register-container,.cancel-btn-container{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.register-container,.cancel-btn-container{
+    padding-top: 10px;
+}
+.about-organizer,.about-btn-container{
+    width: 49%;
+}
+.about-organizer h2{
+    text-align: center;
+}
+.organizer-information{
+    position: relative;
+}
+.active{
+    position: absolute;
+    right: 0px;
+    bottom: 190px;
+}
+

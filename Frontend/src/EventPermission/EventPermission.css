@@ -1,0 +1,12 @@
+.eventPermission-container{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.eventPermission-container img{
+    height: 300px;
+    width: 500px;
+}
