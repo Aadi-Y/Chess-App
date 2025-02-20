@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.event-container-one,.eventInfo-header{
+.event-container-one,.eventInfo-header,.controls{
     max-width: 1010px;
     margin: auto; 
     padding: 10px;
